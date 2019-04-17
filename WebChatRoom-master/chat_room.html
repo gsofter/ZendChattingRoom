@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Chat Room - Main </title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		
+		<script src="js/chat.js"></script>
+		<script src="js/idle.js"></script>
+		<link href="css/chatRoomStyle.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<div id="welcomeText">Welcome: <span id="currentUsername"></span> </div>
+			<div id="chatBox"></div>
+			<div id="input_message_container">
+				<form class="form-inline" action="" id="form_container">
+					<div class="form-group" id="message_input_container">
+						<input type="text" class="form-control" placeholder="Enter message" id="message" />
+					</div>
+					<button type="submit" class="btn btn-default" id="sendBtn">Send</button>
+				</form>
+			</div>
+			<div id="exitBtn_container">
+                <button type="button" id="exitBtn">Exit Chatroom</button>
+			</div>
+		</div>
+		
+	</body>
+</html>
