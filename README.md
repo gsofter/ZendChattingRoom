@@ -2,10 +2,12 @@
 
 ## Enviroment install
 
-###with composer
+with composer
+
 Natviate the project folder and run the following commands.
 composer install
-###Run server
+
+## Run server
 $ composer run --timeout 0 serve
 
 ## Development mode
