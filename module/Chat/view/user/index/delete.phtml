@@ -1,0 +1,21 @@
+<?php
+
+$title = 'Delete User';
+
+$this->headTitle($title);
+
+$url=$this->url('user',['action' => 'delete','id' => $id]);
+
+ ?>
+
+ <h1><?=$this->escapeHtml($title)?></h1>
+<p>Are you sure to delete user?</p>
+<form action="<?php echo $url; ?>" method="post">
+
+	<div class="form-group">
+		<input type="hidden" name="id" value="<?php $user->getId(); $id; ?>">
+		<input type="submit" class="btn btn-danger" name="del" value="Yes">
+		<input type="submit" class="btn btn-default" name="del" value="No">
+	</div>
+	
+</form>
