@@ -1,0 +1,29 @@
+<?php
+
+$title = 'Simple Chat Test Project';
+
+$this->headTitle($title);
+
+ ?>
+
+ <h1 style="text-align: center;"> <?=$this->escapeHtml($title)?></h1>  
+ <!-- <input type="button"class="btn btn-warning" href="<?php echo $this->url('user',['action' => 'addmsg','content' => 'aaaa']) ?>">Add</input> -->
+
+  <div class="row" style="margin-top: 50px;text-align:center;" >
+    <input type="text" name="message" id="message" style="width: 60%; height: 100%;" />
+    <input type="button" class="btn" id="sendMsg" value="Send" style="background-color: #4CAF50; color: white;" />
+  </div>
+
+  <div class="content" style="margin-top: 50px; border: 1px solid grey">
+    <table class="table table-hover" style="overflow-x:auto;">
+    <thead>
+      <tr>
+        <th style="width: 30%;">CreatedAt</th>
+        <th>Content</th>
+      </tr>
+    </thead>
+    <tbody id="tableList" style="width: 100%">
+    </tbody>
+  </table>  
+  </div>
+  

@@ -1,0 +1,35 @@
+<?php
+
+$title = 'User Edit';
+
+$this->headTitle($title);
+
+ ?>
+
+ <h1><?=$this->escapeHtml($title)?></h1>
+
+<?php
+
+$form->setAttribute('action', $this->url('user', ['action' => 'edit','id' => $id]));
+$form->prepare();
+?>
+
+<?php
+echo $this->form()->openTag($form);
+echo $this->formHidden($form->get('id'));
+
+?>
+<br>
+<?php
+echo $this->formRow($form->get('name'));
+?>
+<br>
+
+<?php
+echo $this->formRow($form->get('email'));
+?>
+<br>
+<?php
+echo $this->formSubmit($form->get('submit'));
+echo $this->form()->closeTag();
+?>
